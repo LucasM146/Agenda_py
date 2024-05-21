@@ -10,10 +10,10 @@
             <!-- Conteúdo da página -->
             <div class="container my-4">
                 <div class="card">
-                {% if info.imagem == '' or info.imagem == null  %}
+                {% if contato.imagem == '' or contato.imagem == null  %}
                     <img src="https://th.bing.com/th/id/OIP.pwRRtEsCQAZULNdvJMssZAHaE8?rs=1&pid=ImgDetMain" class="card-img-top" alt="Foto do Contato" style="width: 100px; margin: auto;">
                     {%else%}
-                    <img src="{{info.imagem.url}}"
+                    <img src="{{contato.imagem.url}}"
                     class="card-img-top" alt="Foto do Contato" style="width: 100px; margin: auto;">
                     {%endif%}
                     <div class="card-body">
